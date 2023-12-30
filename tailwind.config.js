@@ -8,6 +8,7 @@ export default {
       },
       fontFamily: {
         nunito: "Nunito Sans",
+        monster: "Montserrat",
       },
     },
   },
