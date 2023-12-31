@@ -43,6 +43,10 @@ function Hero() {
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div className="mt-16 lg:w-[582px]">
+          <img
+            src={rectangle4}
+            className="absolute right-40 top-0 -z-10 blur-3xl lg:-left-40 lg:-top-48"
+          />
           <h1 className="font-monster text-[42px] font-bold leading-[63px] lg:text-[80px] lg:leading-[84px]">
             Build Your
             <br /> Awesome
@@ -69,6 +73,10 @@ function Hero() {
           <img className="hidden lg:block" src={lg_man_group} />
           <img className="absolute -bottom-2 lg:size-28" src={triangles} />
           <img className="absolute bottom-14 right-5 lg:size-14" src={plus} />
+          <img
+            src={rectangle3}
+            className="absolute -bottom-4 blur-3xl lg:-bottom-64"
+          />
         </div>
       </div>
 

@@ -21,6 +21,7 @@ function Footer() {
           </button>
         </div>
         <img className="absolute -bottom-24 lg:-bottom-28" src={circles} />
+        
       </div>
 
       <div className="mt-40 flex flex-col items-center gap-10 text-lg lg:mt-60 lg:flex-row lg:justify-between">

@@ -6,6 +6,7 @@ import service5 from "../assets/Icon-4.svg";
 import service6 from "../assets/Icon-5.svg";
 import triangles from "../assets/triangles.svg";
 import plus from "../assets/plus.svg";
+import rectangle2 from "../assets/gradients/rectangle2.svg";
 
 function Services() {
   const services = [
@@ -69,7 +70,12 @@ function Services() {
           src={plus}
         />
       </div>
-      <div className="grid lg:grid-cols-3 lg:gap-x-24">
+
+      <div className="relative grid lg:grid-cols-3 lg:gap-x-24">
+        <img
+          src={rectangle2}
+          className="absolute inset-x-0 -z-10 hidden blur-3xl lg:-top-64 lg:block"
+        />
         {services.map((service) => (
           <ServiceCard key={service.title} service={service} />
         ))}

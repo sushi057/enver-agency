@@ -1,8 +1,8 @@
 import circles from "../assets/circles.svg";
-import resistance from "../assets/resistance.svg";
 import right_arrow from "../assets/left-arrow.svg";
 import left_arrow from "../assets/right-arrow.svg";
 import { useState } from "react";
+import rectangle3 from "../assets/gradients/rectangle1.svg";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,6 +36,10 @@ function Portfolio() {
         <h1 className="font-monster text-4xl font-bold leading-[54px] lg:text-6xl">
           Our Awesome Portfolio
         </h1>
+        <img
+          src={rectangle3}
+          className="absolute -right-24 hidden size-64 blur-3xl lg:top-0 lg:block"
+        />
         <img
           className="absolute bottom-0 right-5 lg:-bottom-4 lg:size-12"
           src={circles}
