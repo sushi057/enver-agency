@@ -7,12 +7,14 @@ import { useState } from "react";
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { url: "src/assets/portfolio1.png" },
+    { url: "src/assets/portfolio1.png", offset: 116 },
     {
       url: "src/assets/portfolio2.png",
+      offset: 58,
     },
     {
       url: "src/assets/portfolio3.png",
+      offset: 0,
     },
   ];
 
@@ -30,35 +32,52 @@ function Portfolio() {
 
   return (
     <div className="mt-48 flex flex-col items-center">
-      <div className="relative">
-        <h1 className="font-monster text-4xl font-bold leading-[54px]">
+      <div className="relative flex lg:w-full lg:flex-row lg:justify-between">
+        <h1 className="font-monster text-4xl font-bold leading-[54px] lg:text-6xl">
           Our Awesome Portfolio
         </h1>
-        <img className="absolute bottom-0 right-5" src={circles} />
+        <img
+          className="absolute bottom-0 right-5 lg:-bottom-4 lg:size-12"
+          src={circles}
+        />
       </div>
-      <div className="relative mt-14">
-        <div className="grid w-screen place-content-center rounded-2xl bg-[#1E1E20] p-6">
-          <img src={slides[currentIndex].url} />
+
+      <div className="relative mt-12 flex w-screen flex-col overflow-hidden lg:w-full">
+        <div
+          className="flex h-full w-full gap-12 rounded-2xl bg-[#1E1E20] p-6 transition-transform duration-500 lg:hidden"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slides.map((slide) => (
+            <img
+              key={slide.url}
+              src={slide.url}
+              className="lg:object-fit lg:size-64 lg:w-fit"
+            />
+          ))}
         </div>
-        <div className="mt-12 flex flex-row justify-center gap-4">
+
+        <div className="hidden h-full w-full gap-12 rounded-2xl bg-[#1E1E20] p-6 transition-transform duration-500 lg:grid lg:grid-cols-3 lg:gap-20 lg:bg-inherit lg:px-0">
+          <img src={slides[0].url} />
+          <img src={slides[1].url} className="pt-14" />
+          <img src={slides[2].url} className="pt-28" />
+        </div>
+
+        <div className="mt-12 flex flex-row justify-center gap-4 lg:hidden">
           <div
-            className={`active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full transition-colors duration-150 ${
-              currentIndex !== 0 ? "bg-brand/80" : "bg-gray-500"
-            }`}
+            className="active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150"
             onClick={prevSlide}
           >
             <img className="size-4" src={left_arrow} />
           </div>
           <div
-            className={` ${
-              currentIndex !== slides.length - 1 ? "bg-brand/80" : "bg-gray-500"
-            } active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full transition-colors duration-150`}
+            className={
+              "active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150"
+            }
             onClick={nextSlide}
           >
             <img className="size-4" src={right_arrow} />
           </div>
         </div>
-        <img className="absolute -bottom-5 left-5 size-9" src={resistance} />
       </div>
     </div>
   );
