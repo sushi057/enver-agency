@@ -56,7 +56,7 @@ function Services() {
     <div className="relative">
       <div className="relative">
         <img className="absolute -top-20" src={triangles} />
-        <h1 className="font-monster mt-36 text-4xl font-bold leading-[54px]">
+        <h1 className="font-monster mt-36 text-4xl font-bold leading-[54px] text-center">
           The Services We Provide For You
         </h1>
         <img className="absolute right-5 size-7" src={plus} />

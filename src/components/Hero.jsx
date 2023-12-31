@@ -7,53 +7,79 @@ import resistance from "../assets/resistance.svg";
 import triangles from "../assets/triangles.svg";
 import man_group from "../assets/man_group.png";
 import playBtn from "../assets/playBtn.svg";
+import lg_man_group from "../assets/lg_man_group.png";
 
 function Hero() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center justify-between">
-        <div className="flex flex-row items-center gap-1">
-          <img className="h-7" src={enver} />
+        <div className="flex flex-row items-center gap-1 lg:gap-2">
+          <img className="h-7 lg:size-10" src={enver} />
           <h1 className="font-monster text-[28px] font-semibold">Enver</h1>
         </div>
-        <img className="h-6" src={menu} />
-      </div>
-
-      <div className="mt-16">
-        <h1 className="font-monster text-[42px] font-bold leading-[63px]">
-          Build Your
-          <br /> Awesome <br /> Platform
-        </h1>
-        <p className="mt-8 text-lg text-gray-400">
-          Enver studio is a digital studio that offers several services such as
-          UI/UX Design to developers, we will provide the best service for those
-          of you who use our services.
-        </p>
-        <button className="bg-brand font-nunito mt-12 flex max-w-lg flex-row items-center gap-2 px-4 py-2 font-medium">
-          Our Services
-          <img className="h-6" src={arrow} />
+        <img className="h-6 lg:hidden" src={menu} />
+        <nav className="font-nunito hidden gap-10 text-gray-50/70 lg:flex lg:flex-row">
+          <a className="hover:text-brand" href="/">
+            Home
+          </a>
+          <a className="hover:text-brand" href="/">
+            Services
+          </a>
+          <a className="hover:text-brand" href="/">
+            Our Projects
+          </a>
+          <a className="hover:text-brand" href="/">
+            About us
+          </a>
+        </nav>
+        <button className="hover:border-brand hidden w-36 rounded-md border-2 border-gray-50 px-2 py-3 lg:block">
+          Contact us
         </button>
       </div>
 
-      <div className="relative mt-24">
-        <img className="absolute top-5" src={resistance} />
-        <img className="absolute -top-2 right-8" src={circles} />
-        <img src={man_group} />
-        <img className="absolute -bottom-2" src={triangles} />
-        <img className="absolute bottom-14 right-5" src={plus} />
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-16 lg:w-[582px]">
+          <h1 className="font-monster text-[42px] font-bold leading-[63px] lg:text-[80px] lg:leading-[84px]">
+            Build Your
+            <br /> Awesome
+            <br /> Platform
+          </h1>
+          <p className="mt-8 text-lg text-gray-400 lg:text-xl lg:leading-10">
+            Enver studio is a digital studio that offers several services such
+            as UI/UX Design to developers, we will provide the best service for
+            those of you who use our services.
+          </p>
+          <button className="bg-brand font-nunito mt-12 flex max-w-lg flex-row items-center justify-center gap-2 px-4 py-2 font-medium lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
+            Our Services
+            <img className="h-6" src={arrow} />
+          </button>
+        </div>
+
+        <div className="relative mt-24 lg:w-1/2">
+          <img className="absolute top-5 lg:size-24" src={resistance} />
+          <img className="absolute -top-2 right-8 lg:size-14" src={circles} />
+          <img className="lg:hidden" src={man_group} />
+          <img className="hidden lg:block" src={lg_man_group} />
+          <img className="absolute -bottom-2 lg:size-28" src={triangles} />
+          <img className="absolute bottom-14 right-5 lg:size-14" src={plus} />
+        </div>
       </div>
 
       <div className="mx-auto flex flex-col">
-        <h1 className="font-monster mt-28 text-4xl font-bold leading-[54px]">
-          Why Enver Is The Best Choice?
-        </h1>
-        <p className="font-nunito mt-8 text-lg">
-          Watch this one minute video so you <br /> understand why you should
-          use our services!
-        </p>
-        {/* <img src={group_video} /> */}
-        <div className="mt-12 grid h-56 w-full place-content-center bg-[url('src/assets/image-4.png')] bg-auto bg-center object-cover">
+        <div className="flex flex-col lg:mt-32 lg:flex-row lg:items-start lg:justify-between lg:gap-6">
+          <h1 className="font-monster mt-28 text-4xl font-bold leading-[54px] lg:mt-6 lg:w-1/2 lg:text-6xl lg:leading-[70px]">
+            Why Enver Is The Best Choice?
+          </h1>
+          <p className="font-nunito mt-8 text-lg text-gray-400 lg:mt-9 lg:w-[40%] lg:text-xl">
+            Watch this one minute video so you understand why you should use our
+            services!
+          </p>
+        </div>
+        <div className="mt-12 grid h-56 w-full place-content-center bg-[url('src/assets/image-4.png')] bg-auto bg-center lg:hidden">
           <img src={playBtn} />
+        </div>
+        <div className="mt-12 hidden h-56 w-full bg-[url('src/assets/lg_image_4.png')] bg-center object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
+          <img className="size-32" src={playBtn} />
         </div>
       </div>
     </div>

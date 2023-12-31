@@ -37,7 +37,7 @@ function Portfolio() {
         <img className="absolute bottom-0 right-5" src={circles} />
       </div>
       <div className="relative mt-14">
-        <div className="w-screen rounded-2xl bg-[#1E1E20] p-6">
+        <div className="grid w-screen place-content-center rounded-2xl bg-[#1E1E20] p-6">
           <img src={slides[currentIndex].url} />
         </div>
         <div className="mt-12 flex flex-row justify-center gap-4">
