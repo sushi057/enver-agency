@@ -66,7 +66,7 @@ function Services() {
           <ServiceCard key={service.title} service={service} />
         ))}
       </div>
-      <img className="absolute -bottom-36" src={plus} />
+      <img className="absolute -bottom-28" src={plus} />
     </div>
   );
 }
