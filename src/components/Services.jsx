@@ -44,9 +44,11 @@ function Services() {
   const ServiceCard = ({ service }) => {
     return (
       <div className="mt-24 flex flex-col items-center">
-        <img src={service.service} />
-        <p className="font-nunito mt-5 text-2xl">{service.title}</p>
-        <p className="font-nunito mt-5 text-center text-lg leading-[36px] text-gray-400">
+        <img className="lg:w-20" src={service.service} />
+        <p className="font-nunito mt-5 text-center text-2xl lg:text-3xl">
+          {service.title}
+        </p>
+        <p className="font-nunito mt-5 text-center text-lg leading-[36px] text-gray-400 lg:text-xl">
           {service.info}
         </p>
       </div>
@@ -55,13 +57,19 @@ function Services() {
   return (
     <div className="relative">
       <div className="relative">
-        <img className="absolute -top-20" src={triangles} />
-        <h1 className="font-monster mt-36 text-4xl font-bold leading-[54px] text-center">
+        <img
+          className="absolute -top-20 lg:-top-0 lg:size-24"
+          src={triangles}
+        />
+        <h1 className="font-monster mt-36 text-center text-4xl font-bold leading-[54px] lg:mx-auto lg:w-2/3 lg:text-6xl lg:leading-[70px]">
           The Services We Provide For You
         </h1>
-        <img className="absolute right-5 size-7" src={plus} />
+        <img
+          className="absolute right-5 size-7 lg:bottom-2 lg:size-12 lg:rotate-45"
+          src={plus}
+        />
       </div>
-      <div className="grid">
+      <div className="grid lg:grid-cols-3 lg:gap-x-24">
         {services.map((service) => (
           <ServiceCard key={service.title} service={service} />
         ))}

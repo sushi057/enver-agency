@@ -18,7 +18,7 @@ function Hero() {
           <h1 className="font-monster text-[28px] font-semibold">Enver</h1>
         </div>
         <img className="h-6 lg:hidden" src={menu} />
-        <nav className="font-nunito hidden gap-10 text-gray-50/70 lg:flex lg:flex-row">
+        <nav className="font-nunito hidden gap-10 text-xl text-gray-50/70 lg:flex lg:flex-row">
           <a className="hover:text-brand" href="/">
             Home
           </a>
@@ -32,7 +32,7 @@ function Hero() {
             About us
           </a>
         </nav>
-        <button className="hover:border-brand hidden w-36 rounded-md border-2 border-gray-50 px-2 py-3 lg:block">
+        <button className="hover:border-brand hidden w-36 rounded-md border-2 border-gray-50 px-2 py-3 text-lg lg:block">
           Contact us
         </button>
       </div>
@@ -78,7 +78,7 @@ function Hero() {
         <div className="mt-12 grid h-56 w-full place-content-center bg-[url('src/assets/image-4.png')] bg-auto bg-center lg:hidden">
           <img src={playBtn} />
         </div>
-        <div className="mt-12 hidden h-56 w-full bg-[url('src/assets/lg_image_4.png')] bg-center object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
+        <div className="mt-12 hidden h-56 w-full bg-[url('src/assets/lg_image_4.png')] bg-center bg-no-repeat object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
           <img className="size-32" src={playBtn} />
         </div>
       </div>

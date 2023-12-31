@@ -4,7 +4,7 @@ import enver from "../assets/enver.svg";
 
 function Footer() {
   return (
-    <div className="mt-40 flex flex-col mx-10">
+    <div className="mt-40 flex flex-col">
       <div className="relative flex flex-col items-start">
         <img className="absolute right-0" src={plus} />
         <h1 className="font-monster mt-20 text-[38px] font-bold">
