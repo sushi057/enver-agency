@@ -44,7 +44,7 @@ function Services() {
   const ServiceCard = ({ service }) => {
     return (
       <div className="mt-24 flex flex-col items-center">
-        <img className="lg:w-20" src={service.service} />
+        <img className="hover:brightness-150 lg:w-20" src={service.service} />
         <p className="font-nunito mt-5 text-center text-2xl lg:text-3xl">
           {service.title}
         </p>

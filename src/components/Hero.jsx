@@ -49,9 +49,9 @@ function Hero() {
             as UI/UX Design to developers, we will provide the best service for
             those of you who use our services.
           </p>
-          <button className="bg-brand font-nunito mt-12 flex max-w-lg flex-row items-center justify-center gap-2 px-4 py-2 font-medium lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
+          <button className="bg-brand font-nunito group mt-12 flex max-w-lg flex-row items-center justify-center gap-2 px-4 py-2 font-medium transition-all duration-300 hover:brightness-125 lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
             Our Services
-            <img className="h-6" src={arrow} />
+            <img className="h-6 group-hover:rotate-45 duration-300" src={arrow} />
           </button>
         </div>
 
@@ -79,7 +79,7 @@ function Hero() {
           <img src={playBtn} />
         </div>
         <div className="mt-12 hidden h-56 w-full bg-[url('src/assets/lg_image_4.png')] bg-center bg-no-repeat object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
-          <img className="size-32" src={playBtn} />
+          <img className="size-32 hover:brightness-150" src={playBtn} />
         </div>
       </div>
     </div>
