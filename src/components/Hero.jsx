@@ -29,7 +29,7 @@ function Hero() {
           UI/UX Design to developers, we will provide the best service for those
           of you who use our services.
         </p>
-        <button className=" bg-brand font-nunito mt-12 flex max-w-lg flex-row items-center gap-2 px-4 py-2 font-medium">
+        <button className="bg-brand font-nunito mt-12 flex max-w-lg flex-row items-center gap-2 px-4 py-2 font-medium">
           Our Services
           <img className="h-6" src={arrow} />
         </button>
