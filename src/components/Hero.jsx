@@ -8,6 +8,10 @@ import triangles from "../assets/triangles.svg";
 import man_group from "../assets/man_group.png";
 import playBtn from "../assets/playBtn.svg";
 import lg_man_group from "../assets/lg_man_group.png";
+import rectangle1 from "../assets/gradients/rectangle1.svg";
+import rectangle2 from "../assets/gradients/rectangle2.svg";
+import rectangle3 from "../assets/gradients/rectangle3.svg";
+import rectangle4 from "../assets/gradients/rectangle4.svg";
 
 function Hero() {
   return (
@@ -51,7 +55,10 @@ function Hero() {
           </p>
           <button className="bg-brand font-nunito group mt-12 flex max-w-lg flex-row items-center justify-center gap-2 px-4 py-2 font-medium transition-all duration-300 hover:brightness-125 lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
             Our Services
-            <img className="h-6 group-hover:rotate-45 duration-300" src={arrow} />
+            <img
+              className="h-6 duration-300 group-hover:rotate-45"
+              src={arrow}
+            />
           </button>
         </div>
 
