@@ -8,8 +8,6 @@ import triangles from "../assets/triangles.svg";
 import man_group from "../assets/man_group.png";
 import playBtn from "../assets/playBtn.svg";
 import lg_man_group from "../assets/lg_man_group.png";
-import rectangle1 from "../assets/gradients/rectangle1.svg";
-import rectangle2 from "../assets/gradients/rectangle2.svg";
 import rectangle3 from "../assets/gradients/rectangle3.svg";
 import rectangle4 from "../assets/gradients/rectangle4.svg";
 
