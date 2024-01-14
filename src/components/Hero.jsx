@@ -20,7 +20,7 @@ function Hero() {
           <h1 className="font-monster text-[28px] font-semibold">Enver</h1>
         </div>
         <img className="h-6 lg:hidden" src={menu} />
-        <nav className="font-nunito hidden gap-10 text-xl text-gray-50/70 lg:flex lg:flex-row">
+        <nav className="hidden gap-10 font-nunito text-xl text-gray-50/70 lg:flex lg:flex-row">
           <a className="hover:text-brand" href="/">
             Home
           </a>
@@ -34,7 +34,7 @@ function Hero() {
             About us
           </a>
         </nav>
-        <button className="hover:border-brand hidden w-36 rounded-md border-2 border-gray-50 px-2 py-3 text-lg lg:block">
+        <button className="hidden w-36 rounded-md border-2 border-gray-50 px-2 py-3 text-lg hover:border-brand lg:block">
           Contact us
         </button>
       </div>
@@ -55,7 +55,7 @@ function Hero() {
             as UI/UX Design to developers, we will provide the best service for
             those of you who use our services.
           </p>
-          <button className="bg-brand font-nunito group mt-12 flex max-w-lg flex-row items-center justify-center gap-2 px-4 py-2 font-medium transition-all duration-300 hover:brightness-125 lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
+          <button className="group mt-12 flex max-w-lg flex-row items-center justify-center gap-2 bg-brand px-4 py-2 font-nunito font-medium transition-all duration-300 hover:brightness-125 lg:w-56 lg:gap-2 lg:px-7 lg:py-4 lg:text-xl">
             Our Services
             <img
               className="h-6 duration-300 group-hover:rotate-45"
@@ -80,10 +80,10 @@ function Hero() {
 
       <div className="mx-auto flex flex-col">
         <div className="flex flex-col lg:mt-32 lg:flex-row lg:items-start lg:justify-between lg:gap-6">
-          <h1 className="font-monster mt-28 text-4xl font-bold leading-[54px] lg:mt-6 lg:w-1/2 lg:text-6xl lg:leading-[70px]">
+          <h1 className="mt-28 font-monster text-4xl font-bold leading-[54px] lg:mt-6 lg:w-1/2 lg:text-6xl lg:leading-[70px]">
             Why Enver Is The Best Choice?
           </h1>
-          <p className="font-nunito mt-8 text-lg text-gray-400 lg:mt-9 lg:w-[40%] lg:text-xl">
+          <p className="mt-8 font-nunito text-lg text-gray-400 lg:mt-9 lg:w-[40%] lg:text-xl">
             Watch this one minute video so you understand why you should use our
             services!
           </p>
