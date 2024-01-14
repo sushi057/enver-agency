@@ -8,8 +8,8 @@ import triangles from "../assets/triangles.svg";
 import man_group from "../assets/man_group.png";
 import playBtn from "../assets/playBtn.svg";
 import lg_man_group from "../assets/lg_man_group.png";
-import rectangle3 from "../assets/gradients/rectangle3.svg";
-import rectangle4 from "../assets/gradients/rectangle4.svg";
+import rectangle3 from "../assets/gradients/Rectangle3.svg";
+import rectangle4 from "../assets/gradients/Rectangle4.svg";
 
 function Hero() {
   return (
