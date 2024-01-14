@@ -2,7 +2,7 @@ import circles from "../assets/circles.svg";
 import right_arrow from "../assets/left-arrow.svg";
 import left_arrow from "../assets/right-arrow.svg";
 import { useState } from "react";
-import rectangle3 from "../assets/gradients/rectangle1.svg";
+import rectangle3 from "../assets/gradients/Rectangle1.svg";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);

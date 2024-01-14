@@ -6,7 +6,7 @@ import service5 from "../assets/Icon-4.svg";
 import service6 from "../assets/Icon-5.svg";
 import triangles from "../assets/triangles.svg";
 import plus from "../assets/plus.svg";
-import rectangle2 from "../assets/gradients/rectangle2.svg";
+import rectangle2 from "../assets/gradients/Rectangle2.svg";
 
 function Services() {
   const services = [
