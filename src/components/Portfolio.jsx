@@ -7,13 +7,13 @@ import rectangle3 from "../assets/gradients/Rectangle1.svg";
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { url: "src/assets/portfolio1.png", offset: 116 },
+    { url: "/images/portfolio1.png", offset: 116 },
     {
-      url: "src/assets/portfolio2.png",
+      url: "/images/portfolio2.png",
       offset: 58,
     },
     {
-      url: "src/assets/portfolio3.png",
+      url: "/images/portfolio3.png",
       offset: 0,
     },
   ];
@@ -68,14 +68,14 @@ function Portfolio() {
 
         <div className="mt-12 flex flex-row justify-center gap-4 lg:hidden">
           <div
-            className="active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150"
+            className="grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150 active:bg-brand/100"
             onClick={prevSlide}
           >
             <img className="size-4" src={left_arrow} />
           </div>
           <div
             className={
-              "active:bg-brand/100 grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150"
+              "grid h-10 w-10 cursor-pointer place-content-center rounded-full bg-gray-500 transition-colors duration-150 active:bg-brand/100"
             }
             onClick={nextSlide}
           >

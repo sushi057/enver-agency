@@ -5,11 +5,11 @@ import circles from "../assets/circles.svg";
 import plus from "../assets/plus.svg";
 import resistance from "../assets/resistance.svg";
 import triangles from "../assets/triangles.svg";
-import man_group from "../assets/man_group.png";
-import playBtn from "../assets/playBtn.svg";
-import lg_man_group from "../assets/lg_man_group.png";
 import rectangle3 from "../assets/gradients/Rectangle3.svg";
 import rectangle4 from "../assets/gradients/Rectangle4.svg";
+import playBtn from "../assets/playBtn.svg";
+import man_group from "/images/man_group.png";
+import lg_man_group from "/images/lg_man_group.png";
 
 function Hero() {
   return (
@@ -88,10 +88,10 @@ function Hero() {
             services!
           </p>
         </div>
-        <div className="mt-12 grid h-56 w-full place-content-center bg-[url('src/assets/image-4.png')] bg-auto bg-center lg:hidden">
+        <div className="mt-12 grid h-56 w-full place-content-center bg-[url('/images/image-4.png')] bg-auto bg-center lg:hidden">
           <img src={playBtn} />
         </div>
-        <div className="mt-12 hidden h-56 w-full bg-[url('src/assets/lg_image_4.png')] bg-center bg-no-repeat object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
+        <div className="mt-12 hidden h-56 w-full bg-[url('/images/lg_image_4.png')] bg-center bg-no-repeat object-contain lg:grid lg:h-[670px] lg:place-content-center lg:bg-contain">
           <img className="size-32 hover:brightness-150" src={playBtn} />
         </div>
       </div>
